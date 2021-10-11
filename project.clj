@@ -1,10 +1,10 @@
-(defproject clj4tezos "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
+(defproject clj4tezos "0.0.0"
+  :description "Demo project to show use of ej4tezos with Clojure"
+  :license {:name "MIT"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [
-                [tezos/java-se.utils.assert "0.8.3"]
+                 [org.clojure/clojure "1.10.1"]
+                 [tezos/java-se.utils.assert "0.8.3"]
                  [tezos/java-se.utils.string "0.8.3"]
                  [tezos/java-se.utils.osgi "0.8.3"]
                  [tezos/camel.sample.twitter "0.8.3"]
