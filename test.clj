@@ -9,6 +9,7 @@
         org.ej4tezos.crypto.impl.TezosKeyServiceImpl
         org.ej4tezos.model.TezosContractAddress
         org.ej4tezos.model.TezosPrivateKey
+        org.ej4tezos.impl.TezosPollingBlockProducerServiceImpl
         org.ej4tezos.impl.TezosConnectivityImpl)
 
 (def address (. org.ej4tezos.model.TezosAddress toTezosAddress "tz1LMxo1riJNxjSx8o8vi7DrCj9Ct1yepLze"))
@@ -17,10 +18,16 @@
            (toTezosPrivateKey "edsk4LzAuuQF1FkFHV5qXmpL8a5YNtJh1pTtkAYjAVBKCSAbp6LCCD")))
 
 (def tc (new TezosConnectivityImpl))
-
-(def tc (new org.ej4tezos.impl.TezosConnectivityImpl))
 (. tc (setNodeUrl "http://granada.newby.org:8732"))
 (. tc (init))
+
+(def tcs (new TezosCoreServiceImpl))
+(. tcs (setTezosConnectivity tc))
+
+(def pbps (new TezosPollingBlockProducerServiceImpl))
+(. pbps (setTezosCoreService tcs))
+(. pbps init)
+(. pbps start)
 
 (def tcs (new TezosCryptoProviderImpl))
 
