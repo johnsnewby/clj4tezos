@@ -25,11 +25,16 @@
                  [tezos/cgp.api "0.8.3"]
                  [tezos/java-se.crypto-default-impl "0.8.3"]
                  [tezos/java-se.model "0.8.3"]
-                 [tezos/java-se.proxy "0.8.3"] ]
+                 [tezos/java-se.proxy "0.8.3"]
+                 ;; Extra libs needed by above.
+                 [org.apache.httpcomponents.core5/httpcore5 "5.1.2"]
+                 [org.apache.httpcomponents.client5/httpclient5 "5.0.1"]
+                 [org.json/json "20210307"]
+                 [org.slf4j/slf4j-api "1.7.32"] ]
 
   :main ^:skip-aot clj4tezos.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
-  :repositories {"local" ~(str (.toURI (java.io.File. "maven_repo"))) }
+  :repositories {"local_repo" ~(str (.toURI (java.io.File. "maven_repo"))) }
 
   )
