@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.ej4tezos.utils.osgi","c":"OSGIResourceLoader","l":"getResourceAsStream(BundleContext, String)","u":"getResourceAsStream(org.osgi.framework.BundleContext,java.lang.String)"},{"p":"org.ej4tezos.utils.osgi","c":"OSGIResourceLoader","l":"OSGIResourceLoader()","u":"%3Cinit%3E()"}];updateSearchResults();

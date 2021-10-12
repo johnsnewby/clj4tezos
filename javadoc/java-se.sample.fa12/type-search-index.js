@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"org.ej4tezos.sample.fa12","l":"FA12Service"},{"p":"org.ej4tezos.sample.fa12","l":"FA12ServiceImpl"},{"p":"org.ej4tezos.sample.fa12","l":"Main"}];updateSearchResults();
