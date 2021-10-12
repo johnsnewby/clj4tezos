@@ -29,6 +29,7 @@
                  ;; Extra libs needed by above.
                  [org.apache.httpcomponents.core5/httpcore5 "5.1.2"]
                  [org.apache.httpcomponents.client5/httpclient5 "5.0.1"]
+                 [org.bouncycastle/bcprov-jdk15on "1.69"]
                  [org.json/json "20210307"]
                  [org.slf4j/slf4j-api "1.7.32"] ]
 

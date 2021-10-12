@@ -22,8 +22,8 @@
 (. tc (setNodeUrl "http://granada.newby.org:8732"))
 (. tc (init))
 
-(def tcs (new TezosCryptoProvider))
+(def tcs (new TezosCryptoProviderImpl))
 
 (def tks (new TezosKeyServiceImpl))
 
-(. tc (setTezosCryptoProvider (new
+(. tks (setTezosCryptoProvider tcs))
